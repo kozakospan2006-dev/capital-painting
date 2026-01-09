@@ -1,0 +1,58 @@
+<header class="header" data-header>
+  <div class="container header__inner">
+    <a class="brand" href="./index.html" aria-label="Home">
+      <img class="brand__logo" src="./assets/img/logo.jpg" alt="Capital Painting" />
+      <span class="brand__text">
+        <span class="brand__name">Capital Painting</span>
+        <span class="brand__sub">Washington Metro • Since 1975</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <button
+        class="nav__toggle"
+        type="button"
+        data-nav-toggle
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span class="sr-only">Open menu</span>
+        <span class="nav__icon" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav__menu" id="navMenu" data-nav-menu>
+        <a class="nav__link" href="./index.html">Home</a>
+
+        <div class="dropdown" data-dropdown>
+          <button
+            class="nav__link dropdown__toggle"
+            type="button"
+            data-dropdown-toggle
+            aria-expanded="false"
+            aria-controls="servicesMenu"
+            aria-haspopup="menu"
+          >
+            Services
+            <span class="dropdown__chev" aria-hidden="true">▾</span>
+          </button>
+
+          <div class="dropdown__menu" id="servicesMenu" role="menu">
+            <a class="dropdown__item" role="menuitem" href="./commercial-painting.html">Commercial Painting</a>
+            <a class="dropdown__item" role="menuitem" href="./residential-painting.html">Residential Painting</a>
+            <a class="dropdown__item" role="menuitem" href="./prep-repairs-coatings.html">Prep, Repairs & Coatings</a>
+          </div>
+        </div>
+
+        <a class="nav__link" href="./projects.html">Projects</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link" href="./contact.html#estimate">Contact</a>
+
+        <div class="nav__cta">
+          <a class="btn btn--ghost" href="tel:+17033130013">Call (703) 313-0013</a>
+          <a class="btn btn--primary" href="./contact.html#estimate">Free Estimate</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
