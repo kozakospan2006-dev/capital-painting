@@ -1,0 +1,87 @@
+<footer class="footer footer--xl">
+  <div class="container">
+    <div class="footerxl">
+
+      <!-- SERVICES -->
+      <section class="footerxl__col" aria-label="Services">
+        <h3 class="footerxl__title">Services</h3>
+
+        <ul class="footerxl__list">
+          <li><a class="footerxl__link" href="./residential-painting.html">Interior &amp; Exterior Painting</a></li>
+          <li><a class="footerxl__link" href="./prep-repairs-coatings.html">Prep, Repairs &amp; Coatings</a></li>
+          <li><a class="footerxl__link" href="./commercial-painting.html">Commercial Painting</a></li>
+          <li><a class="footerxl__link" href="./services.html">All Services</a></li>
+        </ul>
+
+        <a class="btn btn--ghost" href="./services.html">View All Services</a>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="footerxl__col" aria-label="Contact">
+        <h3 class="footerxl__title">Contact Us Today</h3>
+
+        <div class="footerxl__stack">
+          <p class="footerxl__line">
+            5520 Oakwood Rd<br>
+            Alexandria, VA 22310
+          </p>
+
+          <p class="footerxl__line">
+            <a class="footerxl__link" href="tel:+17033130013">(703) 313-0013</a>
+          </p>
+
+          <!-- Email (opens chooser modal) -->
+          <p class="footerxl__line">
+            <button class="footerxl__link email-chooser__btn" type="button" data-email-chooser>
+              capitalpainting.info@gmail.com
+            </button>
+          </p>
+
+          <div class="footerxl__social" aria-label="Social">
+            <a class="footerxl__icon" href="#" aria-label="Facebook">f</a>
+            <a class="footerxl__icon" href="#" aria-label="Twitter / X">x</a>
+            <a class="footerxl__icon" href="#" aria-label="Instagram">⌁</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FIND US -->
+      <section class="footerxl__col footerxl__map" aria-label="Find us">
+        <h3 class="footerxl__title">Find Us</h3>
+
+        <div class="footerxl__mapbox">
+          <iframe
+            title="Capital Painting - Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.5725011889713!2d-77.13377602381613!3d38.796433571745766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b2417e09f2e5%3A0xc99a80304eac6a22!2s5520%20Oakwood%20Rd%2C%20Alexandria%20VA%2022310!5e0!3m2!1sen!2sus!4v1767480669704!5m2!1sen!2sus"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="footerxl__bottom">
+      <p class="muted">© <span id="year"></span> Capital Painting. All rights reserved.</p>
+      <p class="muted">Alexandria, VA • Washington Metro</p>
+    </div>
+  </div>
+
+  <!-- Email chooser modal (must be OUTSIDE .container / .footerxl) -->
+  <div class="modal" id="emailChooser" aria-hidden="true">
+    <div class="modal__backdrop" data-email-close></div>
+
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="emailChooserTitle">
+      <h3 class="modal__title" id="emailChooserTitle">Choose an email app</h3>
+
+      <div class="modal__actions">
+        <a class="btn btn--ghost modal__btn" id="emailDefault">Default Mail App</a>
+        <a class="btn btn--ghost modal__btn" id="emailOutlook">Outlook</a>
+        <a class="btn btn--ghost modal__btn" id="emailGmail">Gmail</a>
+      </div>
+
+      <button class="btn btn--primary modal__close" type="button" data-email-close>Close</button>
+    </div>
+  </div>
+</footer>
