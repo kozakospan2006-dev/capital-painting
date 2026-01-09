@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Contact | Capital Painting</title>
+  <meta name="description" content="Request a free estimate for commercial or residential painting. Share location, scope, and timeline—Capital Painting responds quickly across the Washington Metro area." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Capital Painting" />
+  <meta property="og:title" content="Contact | Capital Painting" />
+  <meta property="og:description" content="Request a free estimate for commercial or residential painting. Share location, scope, and timeline—Capital Painting responds quickly across the Washington Metro area." />
+  <meta property="og:url" content="https://capitalpainting.net/contact.html" />
+  <meta property="og:image" content="https://capitalpainting.net/assets/img/og.jpg" />
+
+  <meta name="theme-color" content="#0b1220" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Capital Painting",
+    "telephone": "+1-703-313-0013",
+    "email": "capitalpainting.info@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5520 Oakwood Rd",
+      "addressLocality": "Alexandria",
+      "addressRegion": "VA",
+      "postalCode": "22310",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Alexandria, VA", "Arlington, VA", "Fairfax, VA", "Washington, DC"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div data-include="./components/header.html"></div>
+
+  <main id="main">
+    <section class="pagehero" id="estimate">
+      <div class="container">
+        <h1>Request a Free Estimate</h1>
+        <p class="muted">Share location, scope, and timeline. We respond quickly.</p>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__form">
+
+            <!-- ✅ Formspree: replace YOUR_FORM_ID with your real form id -->
+            <form class="form"
+                  id="estimateForm"
+                  method="POST"
+                  action="https://formspree.io/f/xwvpgggk"
+                  novalidate>
+
+              <!-- honeypot (anti-spam): humans won't fill this -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+              <!-- default subject (JS will overwrite with a nicer one) -->
+              <input type="hidden" name="_subject" value="New Estimate Request - Capital Painting">
+
+              <div class="row">
+                <label class="field">
+                  <span>Full Name</span>
+                  <input name="name" autocomplete="name" required />
+                </label>
+
+                <label class="field">
+                  <span>Phone</span>
+                  <input name="phone" inputmode="tel" autocomplete="tel" required />
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+
+              <div class="row">
+                <label class="field">
+                  <span>Project Type</span>
+                  <select name="type" required>
+                    <option value="" selected disabled>Select one…</option>
+                    <option>Commercial</option>
+                    <option>Residential</option>
+                    <option>HOA / Condominium</option>
+                    <option>Other</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span>Preferred Timeline</span>
+                  <select name="timeline" required>
+                    <option value="" selected disabled>Select one…</option>
+                    <option>ASAP</option>
+                    <option>2–4 weeks</option>
+                    <option>1–2 months</option>
+                    <option>Flexible</option>
+                  </select>
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Property Address / Area</span>
+                <input name="location" autocomplete="street-address" placeholder="Alexandria, VA (or nearby)" required />
+              </label>
+
+              <label class="field">
+                <span>Project Details</span>
+                <textarea name="details" rows="5" placeholder="What areas need painting? Interior/exterior? Approx. size? Any repairs/prep?" required></textarea>
+              </label>
+
+              <div class="form__actions">
+                <button class="btn btn--primary btn--lg" type="submit">Send Estimate Request</button>
+                <a class="btn btn--ghost btn--lg" href="tel:+17033130013">Call Now</a>
+              </div>
+
+              <p class="form__fine muted">Submitting sends your request directly to our team.</p>
+              <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="trustbar">
+              <div class="trustbar__item"><div class="trustbar__top">Licensed</div><div class="trustbar__sub">Professional standards</div></div>
+              <div class="trustbar__item"><div class="trustbar__top">Insured</div><div class="trustbar__sub">Jobsite protection</div></div>
+              <div class="trustbar__item"><div class="trustbar__top">Since 1975</div><div class="trustbar__sub">Long-term reliability</div></div>
+            </div>
+          </div>
+
+          <aside class="contact__info">
+            <div class="infocard">
+              <div class="infocard__title">Contact</div>
+              <p><strong>Phone:</strong> <a class="link" href="tel:+17033130013">(703) 313-0013</a></p>
+              <p><strong>Email:</strong> <a class="link" href="mailto:capitalpainting.info@gmail.com">capitalpainting.info@gmail.com</a></p>
+              <p class="muted"><strong>Address:</strong> 5520 Oakwood Rd, Alexandria, VA 22310</p>
+
+              <div class="infocard__cta">
+                <a class="btn btn--ghost" href="tel:+17033130013">Call</a>
+                <a class="btn btn--primary" href="mailto:capitalpainting.info@gmail.com">Email</a>
+                <a class="btn btn--ghost" target="_blank" rel="noopener"
+                   href="https://www.google.com/maps?q=5520+Oakwood+Rd,+Alexandria,+VA+22310">
+                  Directions
+                </a>
+              </div>
+            </div>
+
+            <div class="map">
+              <iframe
+                title="Capital Painting - Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.5725011889713!2d-77.13377602381613!3d38.796433571745766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b2417e09f2e5%3A0xc99a80304eac6a22!2s5520%20Oakwood%20Rd%2C%20Alexandria%2C%20VA%2022310%2C%20USA!5e0!3m2!1sen!2sat!4v1767480669704!5m2!1sen!2sat"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="areas">
+              <div class="areas__title">Areas we serve</div>
+              <div class="areas__grid">
+                <span class="area">Alexandria</span>
+                <span class="area">Arlington</span>
+                <span class="area">Fairfax</span>
+                <span class="area">Springfield</span>
+                <span class="area">Falls Church</span>
+                <span class="area">Washington, DC</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="./components/footer.html"></div>
+  <script src="./assets/js/include.js" defer></script>
+</body>
+</html>
+
